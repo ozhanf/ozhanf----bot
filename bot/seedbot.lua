@@ -320,69 +320,68 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
 
 !kick [username|id]
-You can also do it by reply
+کیک کردن افراد با ریپلای هم اینکارو میشه انجام داد
 
 !ban [ username|id]
-You can also do it by reply
+بن کردن افراد با رپلای هم میشه اینکارو انجام داد
 
 !unban [id]
-You can also do it by reply
+از بن دراوردن افراد با رپلای هم میشه اینکارو انجام داد
 
 !who
 Members list
 
 !modlist
-Moderators list
+لیست مدیر های گروه
 
 !promote [username]
-Promote someone
+مدیر کردن یه شخص
 
 !demote [username]
-Demote someone
+از مدیر دراوردن یه شخص
 
 !kickme
-Will kick user
+لفت دادن از گروه
 
 !about
-Group description
+توضیحات گروه
 
 !setphoto
-Set and locks group photo
+عوض کردن عکس گروه
 
 !setname [name]
-Set group name
+عوض کردن اسم گروه
 
 !rules
 Group rules
 
 !id
-return group id or user id
+گرفتن ایدی
 
 !help
 
 !lock [member|name|bots|leave]	
 Locks [member|name|bots|leaveing] 
-
+{بستن {ممبر|نام|بات|لفت
 !unlock [member|name|bots|leave]
 Unlocks [member|name|bots|leaving]
-
+یاز کزدن {بستن {ممبر|نامربات
 !set rules <text>
 Set <text> as rules
 
 !set about <text>
-Set <text> as about
+تقییر توضیحات گروه
 
 !settings
-Returns group settings
+تنظیمات گروه
 
 !newlink
-create/revoke your group link
+لینک جدید
 
 !link
-returns group link
+گرفتن لینک
 
 !owner
 returns group owner id
@@ -427,6 +426,7 @@ will return group ban list
 
 ]]
   }
+
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
 end
